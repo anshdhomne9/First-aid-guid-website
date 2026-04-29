@@ -115,7 +115,7 @@ header{
     left: 0;
     height: 5px;
     width: 100%;
-    background: linear-gradient( red, orange);
+    background: linear-gradient(90deg, red, orange);
 }
 
 
@@ -338,7 +338,7 @@ header{
 
 
 .btn{
-    background-color: red;
+   background: linear-gradient(90deg,red, orange);
     color: white;
     border: none;
     border-radius: 25px;
