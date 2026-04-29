@@ -1,0 +1,453 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+
+header{
+    width: 100%;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand{
+    color: white;
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+.search-bar-div{
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar{
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar:focus{
+    outline: none;
+}
+
+.navbtn{
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.navbtn:hover{
+    background-color: rgb(226, 220, 220);
+}
+
+.navbar-nav{
+    padding-right: 30px;
+}
+
+.nav-link{
+    color: white;
+}
+
+
+.guide-container{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.row1, .row2, .row3, .row4 {
+    gap: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+
+.box1 , .box2 , .box3 , .box4 , .box5 , .box6 , .box7 , .box8 ,
+.box9 , .box10 , .box11 , .box12 , .box13 , .box14 , .box15 , .box16 {
+
+    width: 23%;
+    height: 400px;
+    margin-top: 2%;
+    margin-bottom: 30px;
+
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 18px;
+    border: none;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.box1::before, .box2::before, .box3::before, .box4::before,
+.box5::before, .box6::before, .box7::before, .box8::before,
+.box9::before, .box10::before, .box11::before, .box12::before,
+.box13::before, .box14::before, .box15::before, .box16::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient( red, orange);
+}
+
+
+.box1:hover , .box2:hover , .box3:hover , .box4:hover , .box5:hover , .box6:hover
+, .box7:hover , .box8:hover , .box9:hover , .box10:hover , .box11:hover
+, .box12:hover , .box13:hover , .box14:hover , .box15:hover , .box16:hover{
+
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.25);
+}
+
+.box1-img{
+     border-radius: 10px;
+    width: 100%;
+  border: 2px solid black;
+    background-image:url(../images/skin-burn.jpg);
+    background-size: auto;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box2-img{
+     border-radius: 10px;
+     border: 2px solid black;
+    width: 100%;
+    background-image:url(../images/bleeding.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box3-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/fracture.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box4-img{
+     border-radius: 10px;
+    width: 100%;
+    border: 2px solid black;
+    background-image:url(../images/choking.webp);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box5-img{
+     border-radius: 10px;
+    width: 100%;
+  border: 2px solid black;
+    background-image:url(../images/heart-attack.jpg.avif);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+
+.box6-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/electric-shock.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box7-img{
+     border-radius: 10px;
+    width: 100%;
+  border: 2px solid black;
+    background-image:url(../images/snake-bite.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box8-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/animal\ bite.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box9-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/heat-stroke.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box10-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/Hypothermia.webp);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box11-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/Fainting.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box12-img{
+     border-radius: 10px;
+    width: 100%;
+    height: 60%;
+    background-image:url(../images/Nosebleed.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box13-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/Eye\ Injury.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box14-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/Poisoning.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box15-img{
+     border-radius: 10px;
+    width: 100%;
+   border: 2px solid black;
+    background-image:url(../images/Asthma\ Attack.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.box16-img{
+    border-radius: 10px;
+    width: 100%;
+  border: 2px solid black;
+    background-image:url(../images/Head\ Injury.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+
+.box1-img, .box2-img, .box3-img, .box4-img,
+.box5-img, .box6-img, .box7-img, .box8-img,
+.box9-img, .box10-img, .box11-img, .box12-img,
+.box13-img, .box14-img, .box15-img, .box16-img {
+
+    height: 150px;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+
+.box1:hover .box1-img,
+.box2:hover .box2-img,
+.box3:hover .box3-img,
+.box4:hover .box4-img,
+.box5:hover .box5-img,
+.box6:hover .box6-img,
+.box7:hover .box7-img,
+.box8:hover .box8-img,
+.box9:hover .box9-img,
+.box10:hover .box10-img,
+.box11:hover .box11-img,
+.box12:hover .box12-img,
+.box13:hover .box13-img,
+.box14:hover .box14-img,
+.box15:hover .box15-img,
+.box16:hover .box16-img{
+    transform: scale(1.1);
+}
+
+
+.box1 h2, .box2 h2, .box3 h2, .box4 h2,
+.box5 h2, .box6 h2, .box7 h2, .box8 h2,
+.box9 h2, .box10 h2, .box11 h2, .box12 h2,
+.box13 h2, .box14 h2, .box15 h2, .box16 h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+
+.btn{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255,0,0,0.4);
+}
+
+
+footer{
+    width: 100%;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 20px 50px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+  margin-bottom: 15px;
+  color: #00c4ff;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin: 8px 0;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+  color: #00c4ff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00c4ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: #000;
+  font-size: 14px;
+  border-top: 1px solid #222;
+}
+
+
+@media (max-width: 992px){
+    .box1 , .box2 , .box3 , .box4 , .box5 , .box6 , .box7 , .box8 ,
+    .box9 , .box10 , .box11 , .box12 , .box13 , .box14 , .box15 , .box16 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px){
+    .box1 , .box2 , .box3 , .box4 , .box5 , .box6 , .box7 , .box8 ,
+    .box9 , .box10 , .box11 , .box12 , .box13 , .box14 , .box15 , .box16 {
+        width: 80%;
+    }
+
+    h1{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .search-bar-div{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar{
+        width: 100%;
+    }
+}
